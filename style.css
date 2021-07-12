@@ -6,6 +6,7 @@
 :root {
   --primary: rgba(110, 167, 4, 0.9);
   --secondary: white;
+  --tertiary: rgb(205, 205, 216);
 }
 body {
   display: flex;
@@ -14,11 +15,43 @@ body {
   height: 100vh;
   background: var(--primary);
 }
+.btn {
+  padding: 10px 20px;
+  border: none;
+}
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
   height: 400px;
   width: 500px;
   background: var(--secondary);
+}
+#section {
+  margin: 10px 20px;
+  flex: 0.6;
+}
+
+#section #problem {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#section .choice {
+  padding: 10px;
+  margin: 5px;
+  background: rgb(218, 212, 212);
+}
+header {
+  flex: 0.2;
+  background: var(--tertiary);
+  box-shadow: 0 1px 5px #333;
+}
+footer {
+  flex: 0.2;
+  background: var(--tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
 }
