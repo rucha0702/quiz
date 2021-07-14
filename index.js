@@ -77,10 +77,7 @@ function display(count)
     a2.innerHTML="<p>"+ mcq[count].options[1] +"</p>" 
     a3.innerHTML="<p>"+ mcq[count].options[2] +"</p>" 
     a4.innerHTML="<p>"+ mcq[count].options[3] +"</p>" 
-    a1.className="choice"
-    a2.className="choice"
-    a3.className="choice"
-    a4.className="choice"
+   
 }
 var time = 59;
 setInterval(function(){
