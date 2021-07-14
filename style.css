@@ -7,6 +7,7 @@
   --primary: rgba(110, 167, 4, 0.9);
   --secondary: white;
   --tertiary: rgb(205, 205, 216);
+  --color1: rgb(13, 35, 235);
 }
 body {
   display: flex;
@@ -14,10 +15,32 @@ body {
   align-items: center;
   height: 100vh;
   background: var(--primary);
+  font-size: 1.1rem;
 }
 .btn {
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
+  background: var(--color1);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.btn-sub {
+  background: var(--primary);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header #timer {
+  background: white;
+  width: 30px;
+  text-align: center;
+  padding: 5px 0;
 }
 .container {
   display: flex;
@@ -41,6 +64,12 @@ body {
   padding: 10px;
   margin: 5px;
   background: rgb(218, 212, 212);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+#section .choice:hover {
+  background: rgb(109, 107, 107);
+  color: white;
 }
 header {
   flex: 0.2;
@@ -54,4 +83,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+}
+.color {
+  background: black;
+  color: white;
 }
