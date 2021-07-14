@@ -88,17 +88,17 @@ setInterval(function(){
  { document.getElementById('timer').innerHTML=time;
   time--;}
 },1000)
-function toggle(){
-    let opt = document.querySelectorAll('.choice')
-    var i;
-    for(i=0;i<4;i++)
-    {
+// function toggle(){
+//     let opt = document.querySelectorAll('.choice')
+//     var i;
+//     for(i=0;i<4;i++)
+//     {
         
-        opt[i].onclick=function(){
-            opt[i].classList.add("color")
-        }
-    }
-}
+//         opt[i].onclick=function(){
+//             opt[i].classList.add("color")
+//         }
+//     }
+// }
 
 var one = document.getElementsByClassName("choice");
 var j;
